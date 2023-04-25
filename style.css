@@ -14,7 +14,6 @@ main {
     background-color: hsl(0, 0%, 100%);
     display: flex;
     border-radius: 20px;
-    flex-wrap: wrap;
 }
 
 p {
@@ -73,6 +72,14 @@ h3 {
     border-radius: 10px;
 }
 
+.align-class {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    padding-right: 1rem;
+}
 button {
     border-radius: 24px;
     background-color: hsl(224, 30%, 27%);
@@ -119,3 +126,20 @@ button:hover {
     font-size: 12px;
     color: grey;
 }
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 0;
+        min-height: initial;
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    .result, .summary {
+        width: 100%;
+    }
+    .result {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+  }
